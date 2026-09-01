@@ -1,0 +1,189 @@
+.journey-wrapper {
+  position: relative;
+
+  height: 520px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* ================= GOAL ================= */
+
+.journey-goal {
+  position: absolute;
+
+  top: 20px;
+  right: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 12px 16px;
+
+  border-radius: 12px;
+
+  color: var(--bmo-red);
+
+  background: white;
+
+  border: 1px solid
+    rgba(229, 9, 20, 0.15);
+
+  box-shadow:
+    0 15px 40px
+    rgba(0, 0, 0, 0.08);
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+
+/* ================= PATH ================= */
+
+.journey-path {
+  position: relative;
+
+  width: 400px;
+  height: 360px;
+
+  transform:
+    rotate(-8deg);
+}
+
+
+/* ================= STEPS ================= */
+
+.step {
+  position: absolute;
+
+  width: 90px;
+  height: 55px;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f3f4f6,
+      #e5e7eb
+    );
+
+  border: 1px solid #d1d5db;
+
+  box-shadow:
+    0 12px 25px
+    rgba(0, 0, 0, 0.08);
+}
+
+.step-1 {
+  bottom: 0;
+  left: 0;
+}
+
+.step-2 {
+  bottom: 65px;
+  left: 70px;
+}
+
+.step-3 {
+  bottom: 130px;
+  left: 140px;
+}
+
+.step-4 {
+  bottom: 195px;
+  left: 210px;
+}
+
+.step-5 {
+  bottom: 260px;
+  left: 280px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffe5e7,
+      #fff
+    );
+
+  border-color:
+    rgba(229, 9, 20, 0.25);
+}
+
+
+/* ================= PERSON ================= */
+
+.journey-person {
+  position: absolute;
+
+  left: 45px;
+  bottom: 25px;
+
+  width: 42px;
+  height: 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  z-index: 5;
+}
+
+.person-head {
+  width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+
+  background: #374151;
+}
+
+.person-body {
+  width: 30px;
+  height: 40px;
+
+  margin-top: 5px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 10px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--bmo-red),
+      var(--bmo-red-light)
+    );
+
+  box-shadow:
+    0 8px 20px
+    rgba(229, 9, 20, 0.25);
+}
+
+
+/* ================= CELEBRATION ================= */
+
+.celebration {
+  position: absolute;
+
+  top: 75px;
+  right: 80px;
+
+  font-size: 25px;
+
+  z-index: 10;
+}
