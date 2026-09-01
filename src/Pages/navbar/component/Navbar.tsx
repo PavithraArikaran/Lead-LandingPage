@@ -3,19 +3,18 @@ import "./Navbar.css";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="navbar navbar-expand-lg custom-navbar">
-      <div className="container-fluid px-5">
+    <nav className="navbar navbar-expand-lg custom-navbar px-5">
+      <div className="container-fluid navbar-container">
 
         {/* Logo */}
-        <a className="navbar-brand d-flex align-items-center" href="#">
-          {/* <div className="logo-icon">T</div> */}
-          <span className="logo-text" style={{ color: "rgb(255, 89, 0)" }}>BMO</span>
-          <span >Leads</span>
+        <a className="navbar-brand brand-logo" href="#">
+          <span className="logo-bmo">BMO</span>
+          <span className="logo-leads"> Leads</span>
         </a>
 
         {/* Mobile Toggle */}
         <button
-          className="navbar-toggler"
+          className="navbar-toggler custom-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#mainNavbar"
@@ -28,35 +27,42 @@ const Navbar: React.FC = () => {
 
         {/* Navigation */}
         <div className="collapse navbar-collapse" id="mainNavbar">
-          <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+          <ul className="navbar-nav navigation-menu">
 
             <li className="nav-item">
-              <a className="nav-link" href="#product">
-                Product
+              <a className="nav-link animated-link" href="#features">
+                Features
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#solutions">
-                Solutions
+              <a className="nav-link animated-link" href="#liveShowCase">
+                Live Showcase
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#pricing">
-                Pricing
+              <a className="nav-link animated-link" href="#works">
+                How It Works
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#company">
-                Company
+              <a className="nav-link animated-link" href="#security">
+                Security
               </a>
             </li>
 
-            <li className="nav-item ms-lg-2">
-              <a className="signup-btn" href="#signup">
-                Sign up
+            <li className="nav-item">
+              <a className="nav-link animated-link" href="#faq">
+                FAQ
+              </a>
+            </li>
+
+            <li className="nav-item cta-item">
+              <a className="signup-btn" href="#started">
+                Get Started
+                <span className="arrow">→</span>
               </a>
             </li>
 
