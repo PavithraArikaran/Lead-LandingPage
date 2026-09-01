@@ -40,17 +40,10 @@
   .brand-logo {
     display: flex;
     align-items: center;
-  
+    gap: 8px;              /* space between BMO and Leads */
     text-decoration: none;
-  
-    white-space: nowrap;
-  
-    font-size: 21px;
+    font-size: 28px;        /* overall font size */
     font-weight: 700;
-  
-    letter-spacing: -0.6px;
-  
-    transition: transform 0.25s ease;
   }
   
   .brand-logo:hover {
@@ -59,14 +52,14 @@
   
   .logo-bmo {
     color: rgb(255, 89, 0);
-  
-    font-weight: 800;
+    font-size: 29px; 
+    font-weight: 700;
   }
   
   .logo-leads {
-    color: #292522;
+    font-size: 24px;
   
-    font-weight: 700;
+    font-weight: 600;
   }
   
   
@@ -132,7 +125,7 @@
     width: 0;
     height: 2px;
   
-    background: rgb(255, 89, 0);
+    background: #e25555;
   
     border-radius: 10px;
   
@@ -169,7 +162,7 @@
   
     border-radius: 22px;
   
-    background: rgb(255, 89, 0);
+    background: #e25555;
   
     color: #fff !important;
   
@@ -189,7 +182,7 @@
   }
   
   .signup-btn:hover {
-    background: rgb(239, 77, 0);
+    background: #e25555;
   
     color: #fff !important;
   
