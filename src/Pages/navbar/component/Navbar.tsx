@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Navbar.css";
 
 const Navbar: React.FC = () => {
   return (
@@ -8,8 +8,9 @@ const Navbar: React.FC = () => {
 
         {/* Logo */}
         <a className="navbar-brand d-flex align-items-center" href="#">
-          <div className="logo-icon">T</div>
-          <span className="logo-text">Typeface AI</span>
+          {/* <div className="logo-icon">T</div> */}
+          <span className="logo-text" style={{ color: "rgb(255, 89, 0)" }}>BMO</span>
+          <span >Leads</span>
         </a>
 
         {/* Mobile Toggle */}
